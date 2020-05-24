@@ -1,0 +1,51 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "Validation for the clinics dynamic data interface",
+	"definitions": {
+		"staffStatus": {
+			"type": "string",
+			"enum": ["כן", "לא", "לא ידוע"]
+		}
+	},
+	"type": "object",
+	"properties": {
+		"Time_stemp": {
+			"type": "string",
+			"format": "date-time"
+		},
+		"Num_Avi": {
+			"type": "integer",
+			"minimum": 1,
+			"maximum": 3000
+		},
+		"Emer_Dept_hmo_GK": {
+			"type": "integer",
+			"minimum": 2357960,
+			"maximum": 2361900
+		},
+		"Status_Clinic": {
+			"type": "string",
+			"enum": ["פתוח", "סגור", "לא ידוע"]
+		},
+		"Status_Pharmacy": {
+			"type": "string",
+			"enum": ["פתוח", "סגור", "לא ידוע", "לא קיים במימד"]
+		},
+		"Status_Family_Doctor": { "$ref": "#/definitions/staffStatus" },
+		"Status_Nurse": { "$ref": "#/definitions/staffStatus" },
+		"Status_Pediatrician": { "$ref": "#/definitions/staffStatus" },
+		"Status_Gynecologist": { "$ref": "#/definitions/staffStatus" }
+	},
+	"required": [
+		"Time_stemp",
+		"Num_Avi",
+		"Emer_Dept_hmo_GK",
+		"Status_Clinic",
+		"Status_Pharmacy",
+		"Status_Family_Doctor",
+		"Status_Nurse",
+		"Status_Pediatrician",
+		"Status_Gynecologist"
+	],
+	"additionalItems": false
+}

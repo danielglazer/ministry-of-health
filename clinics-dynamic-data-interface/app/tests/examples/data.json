@@ -1,0 +1,13 @@
+[
+	{
+		"Time_stemp": "2015-07-31T19:04:17.41Z",
+		"Num_Avi": 301,
+		"Emer_Dept_hmo_GK": 2361900,
+		"Status_Clinic": "פתוח",
+		"Status_Pharmacy": "פתוח",
+		"Status_Family_Doctor": "כן",
+		"Status_Nurse": "כן",
+		"Status_Pediatrician": "כן",
+		"Status_Gynecologist": "כן"
+	}
+]

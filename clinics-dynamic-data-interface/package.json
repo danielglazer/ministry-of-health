@@ -7,12 +7,22 @@
 		"test": "test",
 		"tsc": "tsc",
 		"dev": "ts-node-dev --respawn --transpileOnly ./app/src/app.ts",
-		"prod": "tsc && node ./build/app.js"
+		"prod": "tsc && node ./build/src/app.js"
 	},
 	"author": "Daniel Glazer",
 	"license": "UNLICENSED",
 	"dependencies": {
-		"ts-node-dev": "^1.0.0-pre.44",
-		"typescript": "^3.9.2"
+		"ajv": "^6.12.2",
+		"axios": "^0.19.2",
+		"bunyan": "^1.8.12",
+		"bunyan-format": "^0.2.1",
+		"chokidar": "^3.4.0",
+		"ts-node-dev": "^1.0.0-pre.44"
+	},
+	"devDependencies": {
+		"typescript": "^3.9.2",
+		"@types/node": "^14.0.4",
+		"@types/bunyan": "^1.8.6",
+		"@types/bunyan-format": "^0.2.3"
 	}
 }
